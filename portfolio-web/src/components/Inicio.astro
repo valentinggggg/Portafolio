@@ -1,0 +1,27 @@
+---
+import IMGProfile from '../assets/img/cv.jpg';
+import LinkedinIcon from '../icons/Linkedin.astro'
+import GithubinIcon from '../icons/Github.astro'
+import VercelIcon from '../icons/Vercel.astro'
+---
+
+<main>
+    <section class="mt-28">
+        <div class="flex justify-center items-center">
+                <div class="mr-3 h-72">
+                    <img src={IMGProfile.src} alt="Foto" class="rounded-full w-48 shadow-md shadow-blue-400 border-2-white"/>
+                </div>
+                <div class="flex flex-col">
+                    <h1 class="text-white font-bold text-5xl justify-start mb-3">Valentin Luis Garello </h1>
+                    <p class="text-white font-semibold text-justify text-sm w-[560px]">Tengo 20 años, soy un <span class="text-bold text-blue-300">Desarrollador web</span> especializado en el <span class="text-bold text-blue-300"> Front-end </span> y estudiante de <span class="text-bold text-blue-300">Ingenieria en Sistemas</span>. LLevo 1 año estudiando Lenguajes de programacion y ademas de lo aprendido en mi carrera he realizado los cursos de <span class="text-bold text-blue-300">Argentina Programa 4.0</span>. Actualmente no cuento con experiencia laboral, pero espero poder seguir aprendiendo nuevas tecnologias y poder aplicarlas en un futuro trabajo.</p>
+                    <ul class="text-white font-bold flex gap-x-5 mt-5">
+                        <a class=""><li><GithubinIcon  class="w-8 h-8 cursor-pointer" title="Github"/></li></a>
+                        <a><li class=""><LinkedinIcon class="w-8 h-8 cursor-pointer" title="Linkedin"/></li></a>
+                        <a><li class=""><VercelIcon  class="w-8 h-8 cursor-pointer" title="Vercel"/></li></a>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
