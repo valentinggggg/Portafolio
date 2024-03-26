@@ -1,0 +1,33 @@
+---
+import ReactIcon from '../icons/React.astro'
+import ViteIcon from '../icons/Vite.astro'
+import TailwindIcon from '../icons/Tailwind.astro'
+import HTMLIcon from '../icons/Html.astro'
+import CssIcon from '../icons/Css.astro'
+import CmasLIcon from '../icons/Cmas.astro'
+import JavascriptIcon from '../icons/Javascript.astro'
+---
+
+<section class="mt-32 flex flex-col justify-center items-center">
+    <div class="w-[1000px] flex flex-col justify-center items-center border-solid-1 border-blue-200">
+        <h1 class="text-2xl font-bold text-white">Tecnologias</h1>
+        <div>
+            <table class="mt-6 mb-32">
+                <tr class="text-white text-md flex flex-row gap-4">
+                  <td class="font-bold flex flex-col justify-center items-center"><ReactIcon class="w-6 h-6"/>React</td>
+                  <td class="font-bold flex flex-col justify-center items-center"><TailwindIcon class="w-6 h-6"/>Tailwind</td>
+                  <td class="font-bold flex flex-col justify-center items-center"><HTMLIcon class="w-6 h-6" />HTML</td>
+                  <td class="font-bold flex flex-col justify-center items-center"><CssIcon class="w-6 h-6" />CSS</td>
+                  <td class="font-bold flex flex-col justify-center items-center"><ViteIcon class="w-6 h-6" />Vite</td>
+                  <td class="font-bold flex flex-col justify-center items-center"><JavascriptIcon class="w-6 h-6"/>JavaScript</td>
+                  <td class="font-bold flex flex-col justify-center items-center"><CmasLIcon class="w-6 h-6" />C++</td>
+                </tr>
+                <th class="text-blue-300 font-bold text-xl pt-7">Aprendiendo</th>
+                <tr class="text-white text-md">
+                    <td>Astro</td>
+                    <td></td>
+                  </tr>
+                </table>
+        </div>
+    </div>
+</section>

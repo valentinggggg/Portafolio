@@ -7,6 +7,9 @@ const { title } = Astro.props;
 
 import Header from '../components/Header.astro'
 import Inicio from '../components/Inicio.astro'
+import SobreMi from '../components/Experiencia.astro'
+import Proyectos from '../components/Proyectos.astro'
+import Tecnologias from '../components/Tecnologias.astro'
 ---
 
 <!doctype html>
@@ -22,6 +25,9 @@ import Inicio from '../components/Inicio.astro'
 	<body>
 		<Header />
 		<Inicio />
+		<SobreMi />
+		<Proyectos/>
+		<Tecnologias/>
 		<slot />
 	</body>
 </html>
@@ -39,5 +45,8 @@ import Inicio from '../components/Inicio.astro'
 	}
 	html {
 		font-family: system-ui, sans-serif;
+		scrollbar-color: lightblue #00010e;
+		scrollbar-width: thin;
+		scroll-behavior: smooth;
 	}
 </style>
