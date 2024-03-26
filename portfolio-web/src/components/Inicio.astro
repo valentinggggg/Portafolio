@@ -3,6 +3,7 @@ import IMGProfile from '../assets/img/cv.jpg';
 import LinkedinIcon from '../icons/Linkedin.astro'
 import GithubinIcon from '../icons/Github.astro'
 import VercelIcon from '../icons/Vercel.astro'
+import { MdMail } from "react-icons/md";
 ---
 
 <main id="Inicio">
@@ -13,13 +14,22 @@ import VercelIcon from '../icons/Vercel.astro'
                 </div>
                 <div class="flex flex-col">
                     <h1 class="text-white font-bold text-5xl justify-start mb-3">Valentin Luis Garello </h1>
-                    <p class="text-white font-semibold text-justify text-sm w-[560px]">Tengo 20 años, soy un <span class="text-bold text-blue-300">Desarrollador web</span> especializado en el <span class="text-bold text-blue-300"> Front-end </span> y estudiante de <span class="text-bold text-blue-300">Ingenieria en Sistemas</span>. LLevo 1 año estudiando Lenguajes de programacion y ademas de lo aprendido en mi carrera he realizado los cursos de <span class="text-bold text-blue-300">Argentina Programa 4.0</span>. Actualmente no cuento con experiencia laboral, pero espero poder seguir aprendiendo nuevas tecnologias y poder aplicarlas en un futuro trabajo.</p>
+                    <p class="text-white font-semibold text-justify text-sm w-[560px]">Tengo 20 años, soy un <span class="text-bold text-blue-300">Desarrollador web</span> especializado en el <span class="text-bold text-blue-300"> Front-end </span> y estudiante de <span class="text-bold text-blue-300">Ingenieria en Sistemas</span>. LLevo 1 año estudiando Lenguajes de programacion y ademas de lo aprendido en mi carrera he realizado los cursos de <span class="text-bold text-blue-300">Argentina Programa 4.0</span>. Actualmente <span class="text-red-300 font-bold">no cuento con experiencia laboral</span>, pero espero poder seguir aprendiendo nuevas tecnologias y poder aplicarlas en un futuro trabajo.</p>
                     <ul class="text-white font-bold flex gap-x-5 mt-5">
-                        <a href="https://github.com/valentinggggg"><li><GithubinIcon  class="w-8 h-8 cursor-pointer" title="Github"/></li></a>
-                        <a href="https://www.linkedin.com/in/valentin-luis-garello-552b872a8/"><li class=""><LinkedinIcon class="w-8 h-8 cursor-pointer" title="Linkedin"/></li></a>
-                        <a href="https://vercel.com/valentins-projects-238cc06d"><li class=""><VercelIcon  class="w-8 h-8 cursor-pointer" title="Vercel"/></li></a>
-
+                        <a href="https://github.com/valentinggggg" class="border border-blue-200 rounded-full p-1 pl-3 pr-3 glass brightness-150 hover:brightness-200 hover:pr-4 hover:pl-4 ">
+                            <li class="cursor-pointer flex gap-1">Github<GithubinIcon class="w-6 h-6" title="Github"/></li>
+                        </a>
+                        <a href="https://www.linkedin.com/in/valentin-luis-garello-552b872a8/" class="border border-blue-200 rounded-full p-1 pl-3 pr-3 glass brightness-150 hover:brightness-200 hover:pr-4 hover:pl-4 ">
+                            <li class="cursor-pointer flex gap-1">Linkedin<LinkedinIcon class="w-6 h-6" title="Linkedin"/></li>
+                        </a>
+                        <a href="https://vercel.com/valentins-projects-238cc06d" class="border border-blue-200 rounded-full p-1 pl-3 pr-3 glass brightness-150 hover:brightness-200 hover:pr-4 hover:pl-4 ">
+                            <li class="cursor-pointer flex gap-1">Vercel<VercelIcon class="w-6 h-6" title="Vercel"/></li>
+                        </a>
+                        <a href="mailto:garellovalentin@gmail.com" class="border border-blue-200 rounded-full p-1 pl-3 pr-3 contrast-200 glass hover:brightness-200">
+                            <li class="cursor-pointer flex justify-center items-center gap-1"><MdMail className="w-5 h-5 mt-1" title='Gmail'/> garellovalentin@gmail.com </li>
+                        </a>
                     </ul>
+                    
                 </div>
             </div>
         </div>
