@@ -22,7 +22,7 @@ import Footer from '../components/Footer.astro'
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
     </head>
-    <body>
+    <body class="md:w-screen min-screen-w-sm">
         <Header />
         <Inicio />
         <SobreMi />
@@ -32,12 +32,10 @@ import Footer from '../components/Footer.astro'
         <slot />
     </body>
 </html>
-<style is:global>
-    :root {
-        color-scheme: light dark;
-    }
-
+<style>
     body{
+        width: max-content;
+        align-items: center;
         display: flex;
         justify-content: center;
         flex-direction: column;
