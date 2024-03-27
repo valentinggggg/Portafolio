@@ -5,18 +5,31 @@ import LinkedinIcon from '../icons/Linkedin.astro'
 import GithubinIcon from '../icons/Github.astro'
 import VercelIcon from '../icons/Vercel.astro'
 import { MdMail } from "react-icons/md"
+import PDFCV from '../pdf/Curriculum.pdf'
 ---
 
 <main id="Inicio" class="flex justify-center items-center">
     <section class="md:mt-28 mt-16 flex flex-col md:flex-row md:justify-center animate-fade-in-left justify-center items-center md:text-center md:items-center">
         <div class="md:flex md:justify-center md:items-center flex justify-center items-center w-[900px] md:w-full">
-            <div class="mr-3 md:h-72 h-40 md:w-auto w-[160px] mt-8 ml-28 md:mr-0 mb-24 md:mb-0 md:mt-8">
+            <div class="mr-3 md:h-72 h-40 md:w-auto w-[160px] mt-8 md:mr-0 mb-24 md:mb-0 md:mt-8">
                 <img src={IMGProfile.src} alt="Foto" class="rounded-full w-full h-full md:w-48 md:h-48 shadow-md shadow-blue-400 border-2-white"/>
             </div>
             <div class="flex flex-col items-start md:items-start md:ml-3">
-                <h1 class="text-white font-bold  text-5xl md:mb-3 mb-1 text-center md:text-left">Valentin Luis Garello </h1>
-                <p class="text-white font-semibold text-justify text-md md:w-[560px] w-[450px] md:ml-0 md:leading-normal leading-tight">Tengo 20 años, soy un <span class="text-bold text-blue-300">Desarrollador web</span> especializado en el <span class="text-bold text-blue-300">Front-end</span> y estudiante de <span class="text-bold text-blue-300">Ingenieria en Sistemas</span>. LLevo 1 año estudiando Lenguajes de programacion y ademas de lo aprendido en mi carrera he realizado los cursos de <span class="text-bold text-blue-300">Argentina Programa 4.0</span>. Actualmente <span class="text-red-300 font-bold">no cuento con experiencia laboral</span>, pero espero poder seguir aprendiendo nuevas tecnologias y poder aplicarlas en un futuro trabajo.</p>
+                <div class="flex justify-center items-center">
+                    <h1 class="text-white font-bold  md:text-5xl text-4xl md:mb-3 mb-1 text-center md:text-left">Valentin Luis Garello</h1> 
+                <div class="text-center ml-4">
+                    <a
+                      href={PDFCV}
+                      download="Curriculum.pdf"
+                      class="bg-blue-500 hover:bg-blue-700 border-2-blue-200 text-white text-sm font-bold py-2 px-4 rounded"
+                    >
+                      Descargar CV
+                    </a>
+                  </div>
+                </div>
+                <p class="text-white font-semibold text-justify text-md md:w-[500px] w-[430px] md:ml-0 md:leading-small leading-tight">Tengo 20 años, soy un <span class="text-bold text-blue-300">Desarrollador web</span> especializado en el <span class="text-bold text-blue-300">Front-end</span> y estudiante de <span class="text-bold text-blue-300">Ingenieria en Sistemas</span>. LLevo 1 año estudiando Lenguajes de programacion y ademas de lo aprendido en mi carrera he realizado los cursos de <span class="text-bold text-blue-300">Argentina Programa 4.0</span>. Actualmente <span class="text-red-300 font-bold">no cuento con experiencia laboral</span>, pero espero poder seguir aprendiendo nuevas tecnologias y poder aplicarlas en un futuro trabajo.</p>
                 <ul class="text-white font-bold flex flex-col md:flex-row mt-5 md:ml-0 ml-3">
+                <div class="">
                     <div class="flex">
                         <div class="border border-blue-200 rounded-full p-1 pl-3 pr-3 glass brightness-150 hover:brightness-200 hover:animate-bouncing mb-2 md:mb-0">
                             <a href="https://github.com/valentinggggg">
@@ -34,9 +47,10 @@ import { MdMail } from "react-icons/md"
                                 <li class="cursor-pointer flex gap-2  text-md md:p-0 pr-2 pl-2">Vercel<VercelIcon class="w-6 h-6" title="Vercel"/></li>
                             </a>
                         </div>
-                        <div class="border border-blue-200 rounded-full p-1 pl-3 pr-3 contrast-200 glass hover:brightness-200 md:ml-2 md:visible invisible">
-                            <a href="mailto:garellovalentin@gmail.com">
-                                <li class="cursor-pointer flex gap-1 md:text-md text-sm"><MdMail className="w-5 h-5 mt-1" title='Gmail'/> garellovalentin@gmail.com </li>
+                    </div>
+                        <div class="border border-blue-200 rounded-full contrast-100 bg-blue-800 hover:brightness-90 md:ml-2 md:visible invisible md:mt-4 w-64 h-9 hover:cursor-pointer flex justify-center items-center">
+                            <a href="mailto:garellovalentin@gmail.com" class="justify-center items-center flex">
+                                <li class="cursor-pointer flex gap-1 md:text-md text-md justify-center items-center text-white"><MdMail className="w-5 h-5 mt-1" title='Gmail'/> garellovalentin@gmail.com </li>
                             </a>
                         </div>
                     </div>
