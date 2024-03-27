@@ -1,8 +1,7 @@
 ---
 interface Props {
-	title: string;
+    title: string;
 }
-
 const { title } = Astro.props;
 
 import Header from '../components/Header.astro'
@@ -10,43 +9,46 @@ import Inicio from '../components/Inicio.astro'
 import SobreMi from '../components/Experiencia.astro'
 import Proyectos from '../components/Proyectos.astro'
 import Tecnologias from '../components/Tecnologias.astro'
+import Footer from '../components/Footer.astro'
 ---
 
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<Header />
-		<Inicio />
-		<SobreMi />
-		<Proyectos/>
-		<Tecnologias/>
-		<slot />
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Astro description" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+    </head>
+    <body>
+        <Header />
+        <Inicio />
+        <SobreMi />
+        <Proyectos/>
+        <Tecnologias/>
+		<Footer />
+        <slot />
+    </body>
 </html>
 <style is:global>
-	:root {
-		color-scheme: light dark;
-	}
+    :root {
+        color-scheme: light dark;
+    }
 
-	body{
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		background: rgb(0,1,14);
-		background: linear-gradient(90deg, rgba(0,1,14,1) 0%, rgba(0,2,51,1) 50%, rgba(0,1,14,1) 100%);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		scrollbar-color: lightblue #00010e;
-		scrollbar-width: thin;
-		scroll-behavior: smooth;
-	}
+    body{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background: rgb(0,1,14);
+        background: linear-gradient(90deg, rgba(0,1,14,1) 0%, rgba(0,2,51,1) 50%, rgba(0,1,14,1) 100%);
+    }
+    html {
+        font-family: system-ui, sans-serif;
+        scrollbar-color: lightblue #00010e;
+        scrollbar-width: thin;
+        scroll-behavior: smooth;
+    }
 </style>
+
